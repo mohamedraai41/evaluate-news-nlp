@@ -6,7 +6,7 @@ function handleSubmit(event) {
         console.log("::: FORM INPUT VALID :::")
         
         console.log("BUILDING REQUEST");
-        fetch('http://localhost:8080/', {
+        fetch('http://localhost:8081/evaluate', {
             method: 'POST',
             mode: 'cors',
             headers: {
