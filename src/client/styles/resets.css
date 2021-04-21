@@ -1,0 +1,48 @@
+#section2 {
+	display: none;
+}
+.section2 .result {
+	position: relative;
+	border-radius: 20px;
+	background: #fff;
+	color: black;
+	margin: auto;
+	padding: 40px 10%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.section p {
+	font-weight: bold;
+	padding-bottom: 0.5rem;
+}
+.section2 .result::after {
+	content: '';
+	width: 90%;
+	height: 50px;
+	position: absolute;
+	bottom: -12px;
+	left: 5%;
+	z-index: -1;
+	opacity: 0.3;
+	border-radius: 20px;
+	background: #fff;
+}
+@media (min-width: 768px) {
+	h1 {
+		font-size: 3.5rem;
+   }
+	.result {
+		width: 60%;
+   }
+}
+@media (min-width: 1000px) {
+	h1 {
+		font-size: 3.5rem;
+   }
+	input {
+		width: 25rem;
+   }
+}
