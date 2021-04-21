@@ -33,7 +33,7 @@ app.get('/test', function (req, res) {
 
 const API_KEY = process.env.API_KEY
 
-app.post('/', async (req, res) => {
+app.post('/evaluate', async (req, res) => {
     const url = req.body.formText;
     const baseURL = `https://api.meaningcloud.com/sentiment-2.1?key=${API_KEY}&lang=en&url=${url}`;
     const result = await fetch(baseURL, {
